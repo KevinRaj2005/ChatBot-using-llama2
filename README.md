@@ -27,14 +27,28 @@ Make sure to install the required libraries using `requirements.txt`. You can in
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Setup
 Before running the app, you'll need to configure your API keys. Create a .env file in the root directory and add your keys as follows:
 
-'''bash
+```bash
 OPENAI_API_KEY=your_openai_api_key_here
 LANGCHAIN_API_KEY=your_langchain_api_key_here
-'''
+```
 
 Replace your_openai_api_key_here with your OpenAI API key if you're using app.py.
 Replace your_langchain_api_key_here with your LangChain API key (if applicable).
+
+Running the App
+To start the Streamlit application, use the following commands:
+
+**`For OpenAI GPT-4 (Paid):`**
+```bash
+streamlit run app.py
+```
+
+**`For Llama 2 (Free/Open-Source):`**
+```bash
+streamlit run olamapp.py
+```
